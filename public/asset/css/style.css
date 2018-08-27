@@ -1,0 +1,8 @@
+.col-sm-9-12 {
+    width:11.111111111%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding:5px;
+    height:50px;
+}
