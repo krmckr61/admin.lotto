@@ -18,14 +18,13 @@ class CreateClientboardTable extends Migration
             $table->integer('gameid');
             $table->foreign('gameid')->references('id')->on('game')
                 ->onUpdate('cascade')->onDelete('cascade');
-            $table->integer('clientid');
-            $table->foreign('clientid')->references('id')->on('client')
-                ->onUpdate('cascade')->onDelete('cascade');
+            $table->integer('clientid')->default(0);
             $table->integer('boardid');
             $table->foreign('boardid')->references('id')->on('board')
                 ->onUpdate('cascade')->onDelete('cascade');
             $table->boolean('firstzinc')->default(false);
             $table->boolean('secondzinc')->default(false);
+            $table->integer('priceid')->default(0);
             $table->boolean('bingo')->default(false);
             $table->timestamps();
         });
