@@ -16,6 +16,8 @@ class BoardController extends Controller
         ['name' => 'Mavi', 'value' => 'blue'],
         ['name' => 'Sarı', 'value' => 'yellow'],
         ['name' => 'Kırmızı', 'value' => 'red'],
+        ['name' => 'Mor', 'value' => 'purple'],
+        ['name' => 'Turuncu', 'value' => 'orange'],
     ];
 
     public function index()
